@@ -19,15 +19,6 @@ To run this code, the following must be installed:
 - cudnn
 - qlua (for displaying results)
 
-For displaying the demo images:
-`qlua main.lua demo`
-
-For generating predictions:
-`th main.lua predict-[valid or test]`
-
-For evaluation on a set of validation predictions:
-`th main.lua eval` 
-
 ## Testing your own images
 
 To use the network off-the-shelf, it is critical that the target person is centered in the input image. There is some robustness to scale, but for best performance the person should be sized such that their full height is roughly three-quarters of the input height. Play around with different scale settings to see the impact it has on the network output. We offer a convenient function for generating an input image:
